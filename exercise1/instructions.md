@@ -13,7 +13,7 @@ instructions have been followed and your Pico development environment is in plac
 
 **Anything that did not work, and how you solved it:**
 
-> _Answer:_
+> _Answer:_ The serial monitor thing didn't work in class but after being told to add the stdio_init_all(); it wroks
 >
 
 ---
@@ -31,27 +31,27 @@ environment works from source code all the way to running firmware on the Pico W
    - Select **Pico W** as the target board.
    - Choose a folder for the project.
    - Create/open the project in VS Code.
-4. Add `stdio_init_all();` as the first step inside main()
-5. Add `printf("Test");` inside while loop in main()
-6. Build the project.
+4. Add a `printf("Test");` statement inside the while loop in main().
+5. Build the project.
    - Use the **Compile / Build** command from the Raspberry Pi Pico extension.
    - Watch the terminal output and make sure the build finishes without errors.
-7. Connect the Pico W to your computer using USB.
-8. Flash the program to the Pico W using the **Run / Flash** command in the
+6. Connect the Pico W to your computer using USB.
+7. Flash the program to the Pico W using the **Run / Flash** command in the
    Raspberry Pi Pico extension or by manually uploading the .uf2 file.
-9. Check the board. The LED should now blink continuously.
-10. Connect the **Debug Probe** (hardware) and open the **Serial Monitor**, then look for the output.
+8. Check the board. The LED should now blink continuously.
+9. Connect the **Debug Probe** (hardware) and open the **Serial Monitor**, then look for the output.
 
 ### Checklist
-- [ ] Blink project created and opened
-- [ ] Project builds without errors
-- [ ] Program flashed to the Pico W
-- [ ] The LED is blinking
-- [ ] Serial Monitor output is visible
+- [*] Blink project created and opened
+- [*] Project builds without errors
+- [*] Program flashed to the Pico W
+- [*] The LED is blinking
+- [*] Serial Monitor output is visible
 
 **If the build or flash failed, what was the error and what fixed it?**
 
 > _Answer:_
+Serial Monitor output was not visible - Reason: missing stdio_init_all();
 >
 
 ---
@@ -69,13 +69,79 @@ questions:
 
 | # | Question | Answer |
 |---|----------|--------|
-| 1 | Name | |
-| 2 | Purpose | |
+| 1 | Name | OLED Display |
+| 2 | Purpose | Visual display |
+| 3 | Input or output | Output |
+
+### Module 2
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Name | RGB LED |
+| 2 | Purpose | Light |
+| 3 | Input or output | Output |
+### Module 3
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Name | LED BUTTON |
+| 2 | Purpose | Ligth and button click |
+| 3 | Input or output | Input & Output |
+
+### Module 4
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Name | Temperature & Humidity sensor |
+| 2 | Purpose | Measure external temperature and Humidity |
+| 3 | Input or output | Input |
+### Module 5
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Name | Relay |
+| 2 | Purpose | Circuit breaker |
+| 3 | Input or output | Input |
+
+### Module 6
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Name | Motor driver |
+| 2 | Purpose | controll motor |
+| 3 | Input or output | Output |
+
+### Module 7
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Name | Wireless |
+| 2 | Purpose |  |
 | 3 | Input or output | |
+### Module 8
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Name | Buzzer |
+| 2 | Purpose | sound |
+| 3 | Input or output | output |
+### Module 9
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Name | LDR |
+| 2 | Purpose | Check light level |
+| 3 | Input or output | input |
+### Module 10
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Name | Potentiometer |
+| 2 | Purpose | change values in a range|
+| 3 | Input or output | input |
+---
 
 _Add more blocks as you write._
-
----
 
 ## Exercise 4: Morse Code
 
@@ -99,5 +165,5 @@ Simply copy the modified .c file(s) containing your solution to the exercise fol
 
 **Attached file(s):**
 
-> _Filename:_
+> _Filename:_ blink.c
 >
