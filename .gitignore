@@ -2,6 +2,8 @@
 .vscode/*
 !.vscode/settings.json
 
+puller.bat
+
 # Ignore workspace-specific history databases used by local history extensions
 .history/
 
